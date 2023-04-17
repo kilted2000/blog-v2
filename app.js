@@ -17,7 +17,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect( "mongodb+srv:/admin-richard:test123@cluster0.wfazukh.mongodb.net/?retryWrites=true&w=majority;/blogDB", {useNewUrlParser: true});
+mongoose.connect( "mongodb+srv:/admin-richard:test123@cluster0.wfazukh.mongodb.net/blogDB", {useNewUrlParser: true});
 
 mongoose.set('strictQuery', false);
 
